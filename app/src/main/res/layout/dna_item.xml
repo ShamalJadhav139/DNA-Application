@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_2sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_5sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/idLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomBoldTextView
+            android:id="@+id/idText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomRegularTextView
+            android:id="@+id/dnaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:text="dsfgdgdfgfg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewId"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/idLinearLayout"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/datelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/viewId">
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomBoldTextView
+            android:id="@+id/dateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Publication Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomRegularTextView
+            android:id="@+id/dnaDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:text="dsfgdgdfgfg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDate"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/datelayout"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/typeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/viewDate">
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomBoldTextView
+            android:id="@+id/typeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Article Type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomRegularTextView
+            android:id="@+id/dnaType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:text="dsfgdgdfgfg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewType"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/typeLinearLayout"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+
+   <!-- <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/abstactLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/viewType">
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomBoldTextView
+            android:id="@+id/abstractText"
+            android:layout_width="0dp"
+            android:layout_height="11dp"
+            android:layout_weight="1"
+            android:text="Abstract"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <co.app.bitcoinandroidtrackerapplication.view.uibase.textviews.CustomRegularTextView
+            android:id="@+id/dnaAbstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:text="dsfgdgdfgfg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
